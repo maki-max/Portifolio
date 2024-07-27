@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTIFOLIO</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="js/main.js">
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+</head>
+
+<body>
+
+
+    <header class="bg-white gap-24 mt-4 ">
+        <nav class="flex justify-between lg:gap-20 items-center w-[92%] p-4 max-w-4xl  mx-auto">
+            <div class="branding">
+                <h2 class=" text-xl md:ml-28 lg:ml-5 font-extralight ">Personal</h2>
+            </div>
+            <div
+                class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[50vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 md:ml-60 lg:ml-96">
+                    <li>
+                        <a class="hover:text-gray-500 text-lg font-semibold" href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500 text-lg font-semibold" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500 text-lg font-semibold" href="#interest">Interest</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500 text-lg font-semibold" href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+    <main class="max-w-4xl mt-12 mx-auto">
+        <section id="hero" class="flex flex-col justify-center sm:flex-row
+        p-6 items-center gap-10 lg:gap-52  mb-10 md:mt-16 lg:mt-14  ">
+            <article class="sm:w-1/2 " id="hero">
+                <h2 class="max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left
+            text-slate-700 dark:text-black lg:mt-8">
+                    Maraki
+                    <br> <span class="indent" style="color:#CDEAE5;">Astatke</span>
+                </h2>
+                <p class="max-w-md text-xl mt-4 text-center sm:text-left ">
+                    Welcome to my digital portfolio I <br> am excited to share a bit about
+                    <br>my self.
+                </p> <br><br>
+                <button id="cont"
+                    class="h-10 px-10 w-48 text-center  font-semibold rounded-lg border-2 border-[#CDEAE5] "><a
+                        href="#contact">Contact</a></button>
+            </article>
+            <img class="w-52 -mt-10  lg:w-52" id="photo" src="img/gg.png">
+        </section>
+
+
+        <section id="about" class="flex flex-col justify-center sm:flex-row
+    p-6 items-center gap-28 mb-80 lg:gap-64 lg:mt-80">
+            <img class="w-1/2 -ml-32 lg:w-3/4  " id="about-photo" src="img/about.png">
+            <article class="sm:w-1/2">
+                <h2 id="about-h2" class="max-w-md text-2xl font-semibold text-center sm:text-4xl sm:text-left
+        text-slate-700 dark:text-black">
+                    Hello, I am Maraki Astatke
+                </h2>
+                <p class="max-w-md text-xl mt-4 text-center sm:text-left ">
+                    I am 3rd year computer science student in St Mary.
+                    I am very interested in learning new things and problem solving. I have participated in some team
+                    works
+                    and class projects.
+                </p>
+            </article>
+        </section>
+
+        <section id="skill" class="p-6 my-12 -mt-60 sm:-mt-44 lg:-mt-60">
+            <h2 class="text-2xl lg:mt-11 underline text-center sm:text-2xl mb-3 font-semibold">
+                My Skills
+            </h2>
+
+            <section class="flex flex-col justify-center sm:flex-row
+            p-6 items-center gap-56 mb-80 sm:gap-36 lg:gap-64 ">
+                <article>
+                    <p class="text-2xl"><span class="text-black font-bold text-2xl">
+                            < </span> Html
+                    </p>
+                    <p class="text-2xl mt-8"><span class="text-black font-bold text-2xl">
+                            < </span> Css
+                    </p>
+                </article>
+                <article id="article">
+                    <p class="text-2xl"><span class="text-black font-bold text-2xl">
+                            < </span> C++
+                    </p>
+                    <p class="text-2xl mt-8"><span class="text-black font-bold text-2xl">
+                            < </span> Java
+                    </p>
+                </article>
+                <article id="article">
+                    <p class="text-2xl"><span class="text-black font-bold text-2xl">
+                            < </span> JavaS
+                    </p>
+                    <p class="text-2xl mt-8"><span class="text-black font-bold text-2xl">
+                            < </span> My Sql
+                    </p>
+                </article>
+            </section>
+        </section>
+
+
+        <section id="interest">
+            <h2 class="text-2xl sm:ml-4 ml-10 -mt-80 sm:text-2xl mb-3 font-semibold">
+                My <span style="color:#CDEAE5">Interest</span>
+            </h2>
+            <ul class="list-none mx-auto my-12 flex flex-col sm:flex-row items-center
+    gap-28 sm:gap-20 ">
+                <li class="rounded-full w-[200px] h-[200px] sm:w-60 flex flex-col items-center border border-solid
+    border-slate-900 dark:border-black-100 bg-white py-6px-2  shadow-2xl shadow-[#CDEAE5]  ">
+                    <img src="img/web.png" class="w-16 mt-6 mb-6 h-16">
+                    <h4 class="text-xl  text-center text-slate-900">Web Development</h4>
+
+                </li>
+                <li class="rounded-full w-[200px] h-[200px] sm:w-60 flex flex-col items-center border border-solid
+                border-slate-900 dark:border-black-100 bg-white py-6px-2 shadow-2xl shadow-[#CDEAE5] ">
+                    <img src="img/design.png" class="w-16  mt-6 mb-6 h-16">
+                    <h3 class="text-xl text-center text-slate-900">Design </h3>
+
+                </li>
+                <li class="rounded-full w-[200px] h-[200px] sm:w-60 flex flex-col items-center border border-solid
+                border-slate-900 dark:border-black-100 bg-white py-6px-2  shadow-2xl shadow-[#CDEAE5] ">
+                    <img src="img/ux.jpg" class="w-16 mt-6 mb-6 h-16">
+                    <h3 class="text-xl text-center text-slate-900">UI/UX</h3>
+
+                </li>
+            </ul>
+        </section>
+
+
+        <section>
+            <h2 class="text-2xl text-center sm:text-2xl mb-3 font-semibold">
+                Recent projects
+            </h2>
+            <ul class="list-none mx-auto my-12 flex flex-col sm:flex-row items-center
+    gap-24">
+                <li class="w-2/3 sm:w-60 flex flex-col items-center border border-solid
+    border-slate-900 dark:border-black-100 bg-white py-6px-2 rounded-3xl shadow-xl">
+                    <img src="img/folora.jpg" class="w-4/5 mt-3 mb-6 h-32">
+                    <h3 class="text-lg font-semibold text-center text-slate-900">Flower Shop</h3>
+
+                </li>
+                <li class="w-2/3 sm:w-60 flex flex-col items-center border border-solid
+                border-slate-900 dark:border-black-100 bg-white py-6px-2 rounded-3xl shadow-xl">
+                    <img src="img/cafe.jpg" class="w-4/5  mt-3 mb-6 h-32">
+                    <h3 class="text-lg font-semibold text-center text-slate-900">Cafe and Restaurant </h3>
+
+                </li>
+                <li class="w-2/3 sm:w-60 flex flex-col items-center border border-solid
+                border-slate-900 dark:border-black-100 bg-white py-6px-2 rounded-3xl shadow-xl">
+                    <img src="img/travel.jpg" class="w-4/5  mt-3 mb-6 h-32">
+                    <h3 class="text-lg font-semibold text-center text-slate-900">Travel Agent</h3>
+
+                </li>
+            </ul>
+        </section> <br><br><br>
+
+
+        <section id="contact">
+            <h2 class="text-2xl underline text-center sm:text-2xl mb-3  font-semibold">
+                Get In Touch With Me
+            </h2>
+            <p class="text-2xl underline text-center sm:text-2xl mb-3 font-semibold">Contact Info</p><br>
+            <ul class="list-none  mx-auto my-12 flex flex-col sm:flex-row items-center
+    gap-20">
+                <li class="w-2/3 sm:w-60 flex flex-col items-center border border-solid
+   dark:border-black-100  bg-[#CDEAE5] py-6px-2  rounded-3xl shadow-xl">
+                    <img src="img/e.png" class="w-16 mt-3 mb-6 h-16">
+                    <h3 class="text-xl text-center font-medium mb-3 text-blacks">Email</h3>
+                    <p class="text-sm text-center mb-2 text-black">marakiastateke930@gmail.com</p>
+
+
+                </li>
+                <li class="w-2/3 sm:w-60 flex flex-col items-center border border-solid
+            dark:border-black-100   bg-[#CDEAE5] py-6px-2 rounded-3xl shadow-xl">
+                    <img src="img/p.png" class="w-16  mt-3 mb-6 h-16">
+                    <h3 class="text-xl text-center mb-3 font-medium text-black">Phone </h3>
+                    <p class="text-sm text-center mb-2 text-black">+251911995992</p>
+
+                </li>
+                <li class="w-2/3 sm:w-60 flex flex-col items-center border border-solid
+               dark:border-black-100  bg-[#CDEAE5]  py-6px-2 rounded-3xl shadow-xl">
+                    <img src="img/git.png" class="w-16  mt-3 mb-6 h-16">
+                    <h3 class="text-xl text-center mb-3 font-medium text-black">Git Hub</h3>
+                    <p class="text-sm text-center mb-2 text-black">https://github.com/maki-max</p>
+
+                </li>
+            </ul>
+
+        </section>
+
+        <div id="shadow" class="circlePosition w-[300px] h-[200px]  bg-[#CDEAE5]
+    rounded-[100%] absolute z-1 top-[55%] left-[79%] translate-x-[-50%] md:top-[20%]
+    translate-y-[-50%] blur-[90px] lg:left-[72%] lg:top-[25%] lg:w-[200] "></div>
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e) {
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[-7%]')
+        }
+    </script>
+
+
+
+
+
+</body>
+
+</html>

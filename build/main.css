@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Frank+Ruhl+Libre:wght@300..900&display=swap');
+
+.indent {
+    margin-left: 90px;
+}
+.branding {
+    font-family: 'cedarville cursive';
+}
+#about {
+    margin-bottom: 100px;
+    margin-top: -100px;
+}
+@media (max-width:600px) {
+       #photo {
+        margin-top: 10px;
+    }
+ #shadow {
+        margin-top: 80%;
+        margin-left: -50px;
+    }
+        #cont {
+        margin-left: 40px;
+        margin-top: -20px;
+    }
+      #about-photo {
+        margin-top: 39%;
+        width: 360px;
+        height: 360px;
+        margin-left: 30px;
+      }
+#about-h2 {
+        margin-top: -150px;
+        }
+#skill {
+        margin-top: -90px;
+    }
+        #article {
+        margin-top: -170px;
+    }
+#circle {
+        display: none;
+    }
+}
+@media (min-width:1200px) {
+ #about-photo {
+        margin-top: 60px;
+    } 
+       #about-h2 {
+        margin-top: 60px;
+    }
+}
+@media (min-width:768px) {
+    #shadow {
+        margin-top: 250px;
+    }
+}
